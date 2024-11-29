@@ -1,0 +1,60 @@
+#form-table{
+    display: flex;
+    justify-content: space-around;
+}
+
+#form-table form{
+    border: 1px solid rgb(200, 200, 200);
+    padding: 1rem;
+    width: 30%;
+}
+
+#form-table form label{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-top: 0.1rem;
+}
+
+form input[type="submit"]{
+    background-color: maroon;
+    color: white;
+    border: 0;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.2s;
+    &:active{
+        opacity: 0.5;
+        transform: scale(0.98);
+    }
+}
+
+/* Table Styles */
+
+table{
+    width: 40%;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: teal;
+    color: white;
+}
+
+th, td{
+    padding: 1rem 3rem;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+i{
+    cursor: pointer;
+}

@@ -1,0 +1,80 @@
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.input-form {
+  padding: 10px;
+  width: 30%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+form input,
+form select,
+.filters select {
+  padding: 0.5rem 1rem;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin: 2rem auto;
+  justify-content: center;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list button {
+  color: white;
+  background-color: orangered;
+  border: 0;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task.high {
+  background-color: orange;
+}
+
+.task.medium {
+  background-color: yellow;
+}
+
+.task.low {
+  background-color: lightblue;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
